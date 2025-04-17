@@ -12,15 +12,25 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pixelated hover effect for buttons and images */
+button, .pixel-hover {
+  transition: filter 0.2s, image-rendering 0.2s;
+}
+button:hover, .pixel-hover:hover {
+  filter: contrast(1.2) saturate(1.2) drop-shadow(0 0 2px #000) grayscale(0.1);
+  image-rendering: pixelated;
+}
+img.pixel-hover {
+  transition: filter 0.2s, image-rendering 0.2s;
+}
+img.pixel-hover:hover {
+  filter: contrast(1.2) saturate(1.2) drop-shadow(0 0 2px #000) grayscale(0.1);
+  image-rendering: pixelated;
 }

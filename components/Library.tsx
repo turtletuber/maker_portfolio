@@ -82,7 +82,7 @@ export default function Library() {
                           <div className="px-4 pb-3 pt-2 max-w-full">
                             <span className={`inline-block text-[11px] px-2 py-[1px] rounded ${item.tagColor} font-medium mb-1 align-middle`}>{item.type}</span>
                             <h3 className="text-base font-semibold text-gray-900 leading-tight mb-0.5">{item.title}</h3>
-                            {item.subtitle && <p className="text-[11px] text-gray-400 m-0">{item.subtitle}</p>}
+                            
                             <p className="text-xs text-gray-600 leading-snug m-0 mb-1">{item.description}</p>
                           </div>
                         </a>
@@ -107,7 +107,7 @@ export default function Library() {
                           <div className="px-4 pb-3 pt-2 max-w-full">
                             <span className={`inline-block text-[11px] px-2 py-[1px] rounded ${item.tagColor} font-medium mb-1 align-middle`}>{item.type}</span>
                             <h3 className="text-base font-semibold text-gray-900 leading-tight mb-0.5">{item.title}</h3>
-                            {item.subtitle && <p className="text-[11px] text-gray-400 m-0">{item.subtitle}</p>}
+                            
                             <p className="text-xs text-gray-600 leading-snug m-0 mb-1">{item.description}</p>
                           </div>
                         </Link>
@@ -128,7 +128,7 @@ export default function Library() {
                           <div className="px-4 pb-3 pt-2 max-w-full">
                             <span className={`inline-block text-[11px] px-2 py-[1px] rounded ${item.tagColor} font-medium mb-1 align-middle`}>{item.type}</span>
                             <h3 className="text-base font-semibold text-gray-900 leading-tight mb-0.5">{item.title}</h3>
-                            {item.subtitle && <p className="text-[11px] text-gray-400 m-0">{item.subtitle}</p>}
+                            
                             <p className="text-xs text-gray-600 leading-snug m-0 mb-1">{item.description}</p>
                           </div>
                         </div>

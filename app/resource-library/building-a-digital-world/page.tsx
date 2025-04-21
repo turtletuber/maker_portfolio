@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@/lib/icons";
 import Footer from "../../../components/Footer";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
+import Image from "next/image";
 
 const digitalWorldLesson = {
   badge: "Curriculum",
@@ -49,7 +50,7 @@ export default function BuildingDigitalWorldDetails() {
         <div className="text-sm text-gray-500 mb-4">{project.grades} &middot; {project.subjects} &middot; {project.duration}</div>
         <div className="flex flex-col md:flex-row gap-6 mb-6">
           <div className="flex-shrink-0 w-full md:w-56">
-            <img src={project.slideImages[0].src} alt={project.slideImages[0].caption} className="rounded-lg w-full h-auto mb-2" />
+            <Image src={project.slideImages[0].src} alt={project.slideImages[0].caption} width={400} height={300} className="rounded-lg w-full h-auto mb-2" />
           </div>
           <div className="flex-1">
             <p className="mb-4 text-base text-gray-700">{project.description}</p>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Activity() {
     const projects = [
         {
@@ -38,7 +40,7 @@ export default function Activity() {
                         key={idx}
                         className={`border rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.01] ${project.color} w-full`}
                     >
-                        <img src={project.image} alt={project.title} className="w-full aspect-[4/3] object-cover rounded-t-lg shadow" />
+                        <Image src={project.image} alt={project.title} className="w-full aspect-[4/3] object-cover rounded-t-lg shadow" width={400} height={300} />
 <div className="px-3 pb-3 pt-2 text-[90%]">
   <div className="flex justify-between text-sm text-gray-500">
     <span className={`font-medium ${project.labelColor}`}>{project.type}</span>

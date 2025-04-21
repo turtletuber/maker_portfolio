@@ -1,6 +1,7 @@
 import { ArrowLeftIcon, BookIcon, GraduationCapIcon, ClockIcon, CheckCircleIcon } from "@/lib/icons";
 import Footer from "../../../components/Footer";
 import Sidebar from "../../../components/Sidebar";
+import Image from "next/image";
 
 const scaleModelLesson = {
   badge: "Curriculum",
@@ -85,9 +86,11 @@ export default function ScaleModelProjectDetails() {
                 <div className="grid grid-cols-1 gap-6 mb-10">
                   {project.slideImages.map((slide, i) => (
                     <div key={i} className="overflow-hidden shadow-md rounded-xl bg-white">
-                      <img
+                      <Image
                         src={slide.src}
                         alt={slide.caption}
+                        width={1000}
+                        height={500}
                         className="w-full object-contain max-h-[500px]"
                       />
                       <div className="p-4">
@@ -145,7 +148,7 @@ export default function ScaleModelProjectDetails() {
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-primary mb-2">Questions about this project?</h3>
                     <p className="text-gray-600 mb-4">
-                      I'd be happy to answer any questions or provide additional resources for implementing this in your classroom.
+                      I&apos;d be happy to answer any questions or provide additional resources for implementing this in your classroom.
                     </p>
                     <button className="w-full border border-primary text-primary font-semibold py-2 rounded-xl hover:bg-primary hover:text-white transition">
                       <a href="#contact">Contact Me</a>

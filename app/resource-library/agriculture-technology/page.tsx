@@ -2,6 +2,7 @@ import { ArrowLeftIcon } from "@/lib/icons";
 import Footer from "../../../components/Footer";
 import Sidebar from "../../../components/Sidebar";
 import Link from "next/link";
+import Image from "next/image";
 
 const agTechLesson = {
   badge: "Curriculum",
@@ -13,7 +14,7 @@ const agTechLesson = {
   description:
     "From seed to harvest, uncover the intricate cycles of plant life by becoming both scientist and gardener. You'll nurture plants from their first sprouts in both outdoor gardens and indoor growing spaces, tracking their journey through careful measurement and observation. As you monitor water needs, soil chemistry, and growing conditions, you'll learn to speak the language of plants through data - measuring pH levels, testing natural pest controls, and documenting the results of your experiments. The journey comes full circle as you harvest your own seeds, preparing to start the cycle anew.",
   slideImages: [
-    { src: "/images/ag_tech.png", caption: "Testing and Growing" }
+    { src: "/images/ag_tech.png", caption: "Testing and Growing", width: 400, height: 300 }
   ],
   learningObjectives: [
     "Track plant growth and cycles through observation and data collection.",
@@ -48,7 +49,7 @@ export default function AgricultureTechnologyDetails() {
         <div className="text-sm text-gray-500 mb-4">{project.grades} &middot; {project.subjects} &middot; {project.duration}</div>
         <div className="flex flex-col md:flex-row gap-6 mb-6">
           <div className="flex-shrink-0 w-full md:w-56">
-            <img src={project.slideImages[0].src} alt={project.slideImages[0].caption} className="rounded-lg w-full h-auto mb-2" />
+            <Image src={project.slideImages[0].src} alt={project.slideImages[0].caption} width={600} height={350} className="rounded-lg w-full h-auto mb-2" />
           </div>
           <div className="flex-1">
             <p className="mb-4 text-base text-gray-700">{project.description}</p>

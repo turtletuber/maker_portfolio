@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
     return (
         <section className="flex items-center justify-between px-10 py-12">
@@ -25,7 +27,7 @@ export default function Hero() {
 
                 <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-xl">Get in Touch</button>
             </div>
-            <img src="/images/hero-action.png" alt="Mike teaching kids" className="rounded-xl w-1/2"/>
+            <Image src="/images/hero-action.png" alt="Mike teaching kids" className="rounded-xl w-1/2" width={600} height={600} />
         </section>
     );
 }

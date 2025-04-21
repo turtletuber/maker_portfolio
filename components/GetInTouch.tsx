@@ -1,6 +1,6 @@
 export default function GetInTouch() {
     return (
-        <section className="px-10 py-16 bg-blue-50">
+        <section id="contact" className="px-10 py-16 bg-blue-50">
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
             <p className="text-gray-700 mb-4">Reach out to collaborate, connect, or ask a question.</p>
             <div className="bg-white p-6 rounded-xl shadow-md flex flex-col sm:flex-row items-center justify-between gap-4">

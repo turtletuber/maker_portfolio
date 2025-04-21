@@ -45,7 +45,7 @@ const resources = [
         link: '',
     },
     {
-        title: 'Engaging course content',
+        title: 'Engaging Course Content',
         type: 'Video',
         tagColor: 'bg-red-100 text-red-600',
         image: '/images/what_innovation.png',
